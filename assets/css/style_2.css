@@ -11,18 +11,6 @@ h1 {
     color: white;
     text-align: center;
 }
-footer {
-    z-index: 3;
-    width: 100%;
-    background-color: rgb(61, 177, 185);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: fixed;
-    bottom: 0; 
-    font-family: 'Catamaran', sans-serif;
-    color: white;
-    text-align: center;
-}
 
 #wrap {
     z-index: 1;
@@ -37,19 +25,13 @@ footer {
     background-color: rgb(185, 253, 219);
 }
 
-label {
-    font-family: 'Catamaran', sans-serif;
-    font-size: 25px;
-    margin-bottom: 0px;
+#allButtons {
+    margin-bottom: 20px;
 }
 
-input {
-margin-top: 0px;
-margin-bottom: 20px;
+#new-div-goes-here {
+    
 }
 
-#add-movie {
-    width: 100px;
-}
 
 
