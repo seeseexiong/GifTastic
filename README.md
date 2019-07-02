@@ -10,9 +10,10 @@ Its uses the [Giphy Developer API](https://developers.giphy.com/) to
 Click [HERE](https://seeseexiong.github.io/GifTastic/) to play.
 
 ## Built With
-* HTML/CSS/jQuery - Built the wireframe
-* jQuery - Made the game interactive with the user
+* HTML/CSS/jQuery - Build the wireframe
+* jQuery - Makes the game interactive with the user
 * Visual Studio Code - code editor
+* Giphy Developer - API source
 
 ## Authors
 * See Xiong - _initial work_ - [seeseexiong]( https://github.com/seeseexiong)
