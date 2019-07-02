@@ -3,7 +3,7 @@ This app is an interactive game that runs on the web browser.  Once on the app, 
 
 The user can also create their own animal button(s) by typing an animal on the search bar and click 'Add This Animal'. 
 
-Its uses the [Giphy Developer API](https://developers.giphy.com/explorer) to 
+Its uses the [Giphy Developer API](https://developers.giphy.com/) to 
 
 
 ## Getting Started
