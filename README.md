@@ -1,5 +1,5 @@
 # GifTastic
-This app is an interactive game that runs on the web browser.  Once on the app, the user can generate gifs of any animal available on the buttons.  Each click will generate 10 gifs at a time.
+This app is an interactive game that runs on the web browser.  Once on the app, the user can generate gifs of any animal available on the buttons.  Each click will generate 10 gifs at a time. The gifs can be play and pause by clicking on them.
 
 The user can also create their own animal button(s) by typing an animal on the search bar and click 'Add This Animal'. 
 
