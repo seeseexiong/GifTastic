@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GifTastic</title>
     <!-- bootstrap external link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- my css external link -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:700" rel="stylesheet">
 
 </head>
+
 <body>
     <div id='header'>
         <h1>Animal Gifs</h1>
         <p>Click on the gif to play or pause</p>
     </div>
-    
+
     <div class="row" id="wrap">
-        
-      <div class="col-md-3"> 
-          <form id="gif-form">
-              <label for="gif-input">Add an animal!</label>
-              <!-- INPUT for search feild -->
-              <input type="text" id="gif-input"><br> 
-          
-              <!-- Button -->
-              <input id="add-gif" type="submit" class="prettyaddButton" value="Add This Animal">
-          </form>
-      </div>
 
-      <div class="col-md-9">
-          <div class="row">
-              <div class="col-md-12" id="allButtons">
-                  <div id="buttons-view">
-                    <!-- ============================= NEW BUTTONS goes here =============================== -->
-                  </div>
-                  <button id='clearBtn'>Clear Gifs</button>
-              </div>
-          </div>
-      </div>
+        <div class="col-md-3">
+            <form id="gif-form">
+                <label for="gif-input">Add an animal!</label>
+                <!-- INPUT for search feild -->
+                <input type="text" id="gif-input"><br>
 
-          <div class="row">
-              <div class="col-md-12">
-                  <div id="gifs-view">
+                <!-- Button -->
+                <input id="add-gif" type="submit" class="prettyaddButton" value="Add This Animal">
+            </form>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-12" id="allButtons">
+                    <h6>Click a button to generate 10 gifs!</h6>
+                    <div id="buttons-view">
+                        <!-- ============================= NEW BUTTONS goes here =============================== -->
+                    </div>
+                    <button id='clearBtn'>Clear Gifs</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="gifs-view">
                     <!-- ============================= NEW GIVS goes here =============================== -->
-                  </div>
-              </div>
-          </div>
-    </div> 
-      
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--BootStrap JS, Popper.js, and jQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <!-- my external JS file -->
     <script type="text/javascript" src="assets/javascript/main.js"></script>
-    
+
 </body>
+
 </html>

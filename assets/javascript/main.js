@@ -1,19 +1,19 @@
 // Initial array of animals
-var animals = ["dog", "cat", "bird", "fish", "pig", "bear", "tiger"]; 
+var animals = ["dog", "cat", "bird", "fish", "pig", "bear", "tiger"];
 
 
 // displayGifInfo function re-renders the HTML to display the appropriate content
 function displayGifInfo() {
-  var animal = $(this).attr("data-animal"); 
+  var animal = $(this).attr("data-animal");
 
   var APIKey = "75iukG2rY9lYz0IMDzgKCKeXmcDork08";
-  var queryURL ="https://api.giphy.com/v1/gifs/search?q="+ animal + "&api_key=" + APIKey+ "&limit=10&rating=G";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=" + APIKey + "&limit=10&rating=G";
 
   // Creates AJAX call for the specific gif button being clicked
   $.ajax({
     url: queryURL,
     method: "GET"
-  }).then(function(response) {
+  }).then(function (response) {
 
     // data is an object, print each value
     const result = response.data;
@@ -37,10 +37,10 @@ function displayGifInfo() {
       $("#gifs-view").prepend(mainDiv);   //prepend puts the new mainDive ontop of the old mainDiv
 
       // Check the state of the data-stat.  Once click, if the stat is still then change it to animated and vis versa
-      $('.gif').on('click', function(){
+      $('.gif').on('click', function () {
         var status = $(this).attr('data-state');
-      
-        if(status === 'still') {
+
+        if (status === 'still') {
           var url = $(this).attr('data-animated');
 
           $(this).attr('src', url)
@@ -74,20 +74,22 @@ function renderButtons() {
 
 
 // When this button is click, add the animal in the input feild
-$("#add-gif").on("click", function(event) {
+$("#add-gif").on("click", function (event) {
   //prevents the submit button from submiting its default action to submit the form
   event.preventDefault();
 
   var newAnimal = $("#gif-input").val().trim();
- 
+
   animals.push(newAnimal);
 
   renderButtons();
+  //empty the input field 
+  $("#gif-input").val("")
 });
 
 
 // click on the clearBtn to clear all gif
-$('#clearBtn').on('click', function() {
+$('#clearBtn').on('click', function () {
   $('#gifs-view').empty()
 })
 
